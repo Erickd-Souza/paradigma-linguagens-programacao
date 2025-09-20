@@ -20,7 +20,7 @@ check:
 1. Reescreva o código acima utilizando um laço de repetição pré-teste (`while`) em uma linguagem de sua escolha (C, Java, Python, etc.).
 
 `Resposta`:
-
+```c
 #include <stdio.h>
 void main(){
 	int i = 1;
@@ -29,10 +29,10 @@ void main(){
 		i++;
 	}
 }
-
+````
 2. Reescreva novamente utilizando um laço de repetição controlado por contador (`for`).
 `Resposta:`
-
+```c
 #include <stdio.h>
 void main(){
 	int i = 1;
@@ -40,7 +40,7 @@ void main(){
 		printf("\n %d", i);
 	}
 }
-
+```
 3. Compare os três códigos (original com `goto`, versão com `while` e versão com `for`) e escreva um pequeno parágrafo discutindo qual forma é mais legível e por quê.
 `Resposta`: No meu ponto de vista, a versão com for é mais legível. Pois temos um laço de repetição defenido sendo 10 ou seja sendo mais indicado para este cenário o laço while é mais indicado quando não sabemos a quantidade que o laço será repetido.
 ---
@@ -54,7 +54,7 @@ Muitos programas oferecem menus interativos. Suponha que você precisa implement
 
 **Tarefas:**
 1. Implemente esse menu em **C** utilizando `switch/case`.
-
+```c
 #include <stdio.h>
 
 int main(){
@@ -80,9 +80,9 @@ int main(){
 			printf("\n Opcao invalida!");
 	}
 }
-
+```
 2. Implemente o mesmo menu em **Python**, utilizando apenas `if/elif/else`.
-
+```python
 def main():
     print("\n\t\t MENU:")
     print(" 1 - Calcular o quadrado de um numero.")
@@ -105,7 +105,7 @@ def main():
         
 if __name__ == "__main__":
     main()
-
+```
 3. Execute os dois programas e compare as soluções em relação à clareza e quantidade de código.
 `Resposta`: A linguagem Python exige menos linhas de código, pois é menos verbosa em relação à linguagem C. Como C é de tipagem estática, sua sintaxe exige mais declarações, o que torna o código mais extenso.
 ---
@@ -122,7 +122,7 @@ Historicamente, o `goto` foi usado para resolver diferentes tipos de desvio. Hoj
    - Pare imediatamente a execução ao encontrar o número 0 (`break`).
    - Pule os números negativos sem processá-los (`continue`).
    - Retorne o dobro do primeiro número par encontrado (`return`).
-
+```c
 #include<stdio.h>
 
 int main(){
@@ -142,6 +142,6 @@ int main(){
 	}
 
 }
-
+```
 2. Comente sobre como seria a implementação desse mesmo programa utilizando apenas `goto` e rótulos, destacando as vantagens da abordagem moderna.
 `Resposta`: Isso tornaria o código mais extenso, confuso e difícil de manter, pois o fluxo de execução ficaria disperso entre os vários saltos goto. Já a abordagem moderna, utilizando for, break, continue e return, permite expressar de forma clara e direta cada ação do programa, reduzindo a quantidade de código desnecessário e facilitando a leitura e manutenção. Deste forma, o programa se torna mais seguro e menos sujeito a erros.
