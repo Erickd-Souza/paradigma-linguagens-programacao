@@ -53,9 +53,7 @@ int main(){
 - Qual a diferença observada entre as duas versões?
 - Por que o valor da variável só se altera na versão por referência?
 - Relacione essa diferença com as estratégias de passagem de parâmetros discutidas no Capítulo 9.
-  
 `Resposta`: Quando realizamos a passagem por valor, é realizada uma cópia da variável para o subprograma, de forma que qualquer alteração feita dentro da função não afeta a variável original. Já na passagem por referência, ao invés de passar o valor, passamos o endereço de memória da variável. Deste modo, qualquer auteração feita na função é refletida automaticamente é refletida na variável original, modificando diretamente o seu conteudo.
----
 
 ## Exercício 2 – Corrotinas em GoLang (primeiro contato)
 As **corrotinas** permitem a execução concorrente de rotinas dentro de um programa. Em Go, isso é feito com a palavra-chave `go`.
