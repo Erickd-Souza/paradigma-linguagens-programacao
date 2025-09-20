@@ -54,6 +54,7 @@ Muitos programas oferecem menus interativos. Suponha que você precisa implement
 
 **Tarefas:**
 1. Implemente esse menu em **C** utilizando `switch/case`.
+
 #include <stdio.h>
 
 int main(){
@@ -64,7 +65,7 @@ int main(){
 	printf("\n 3 - Sair do Programa.");
 	printf("\n Selecione uma Opcao:");
 	scanf("%d", &opcao);
-	
+ 
 	switch(opcao){
 		case 1 : 
 		printf("\n Implementacao de quadrado de um numero");
@@ -81,6 +82,7 @@ int main(){
 }
 
 2. Implemente o mesmo menu em **Python**, utilizando apenas `if/elif/else`.
+
 def main():
     print("\n\t\t MENU:")
     print(" 1 - Calcular o quadrado de um numero.")
@@ -120,6 +122,7 @@ Historicamente, o `goto` foi usado para resolver diferentes tipos de desvio. Hoj
    - Pare imediatamente a execução ao encontrar o número 0 (`break`).
    - Pule os números negativos sem processá-los (`continue`).
    - Retorne o dobro do primeiro número par encontrado (`return`).
+
 #include<stdio.h>
 
 int main(){
