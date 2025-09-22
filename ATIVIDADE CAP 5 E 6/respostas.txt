@@ -1,0 +1,37 @@
+
+ATIVIDADE 01
+
+O valor impresso depende do local de definição ou de chamada da função?
+     Depende do local de definição sendo isso o escopo estático.
+
+Qual linguagem se comporta como escopo estático e qual se aproxima de dinâmico?
+  Tanto Python quanto JavaScript usam escopo estático. As Linguagens que se aproximam de escopo dinâmico são mais raras hoje, pois uma Função pode se comportar diferente de quem a chamou isso torna o código difícil de entender, prever e depurar. Algumas linguagem que utiliza esse escopo são: versões antigas de Lisp ou Perl.
+
+ATIVIDADE 02
+
+Por que a sempre reinicia do zero, mas b acumula valor entre chamadas?
+    "a" é recriada a cada chamada da função e "b" é criada uma única vez e mantém o valor entre as chamadas.
+
+Como isso se relaciona com tempo de vida da variável?
+    "a" tem tempo de vida limitado à execução da função. Enquanto "b" vive durante toda a execução do programa.
+
+ATIVIDADE 03
+
+Por que o Java não permite essa operação e o Python permite?
+    Java é estaticamente tipado o seu tipo é fixo na declaração, ou seja após declarado não pode alterar o seu tipo. Já a linguagem Python é dinamicamente tipado onde o tipo da variável pode mudar em tempo de execução.
+
+
+Quais as vantagens e desvantagens de cada abordagem?
+    O Java possui uma tipagem estática obtendo mais segurança de tipo isso garante que não há uma mudança ao longo do programa impedindo erros inesperados. Detecção de erros em tempo de compilação e tem menos flexibilidade.O Python possui uma tipagem dinâmica onde é tem mais flexibilidade e agilidade para prototipar. Sendo mais propenso a erros em tempo de execução.
+
+ATIVIDADE 04
+
+Qual a diferença entre um array e um registro/objeto?
+    Um Array do tipo homogêneo onde todos os elementos têm o mesmo tipo. Já
+Struct/classe são tipo heterogêneo, pois possui campos com tipos diferentes.
+
+Quando usar array?
+    O Cenário ideal de se utilizar array é quando você tem vários dados do mesmo tipo, como números ou strings.
+
+Quando usar struct/classe?
+    Utilizar struct ou classe é quando você precisa representar entidades com múltiplos atributos, como um livro.
